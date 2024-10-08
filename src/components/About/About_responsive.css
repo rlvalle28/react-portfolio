@@ -5,17 +5,25 @@
 
     .flip-cards .flip-back p {
         top: 40px;
-        font-size: 13px;
+        font-size: 16px;
+        height: 90%;
     }
     .about img {
-        width: 310px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 380px) {
+    .flip-cards .flip-back p {
+        font-size: 14px;
+        
     }
 }
 
 @media (max-width: 321px) {
     .flip-cards .flip-back p {
-        top: 40px;
         font-size: 12px;
+        
     }
     .about img {
         width: 280px;

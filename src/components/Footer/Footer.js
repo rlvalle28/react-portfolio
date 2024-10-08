@@ -1,6 +1,7 @@
 import React from 'react'
 import logo_img from '../../images/logo_remove_bg.png';
 import '../Footer/Footer.css';
+import '../Footer/Footer_responsive.css';
 import { FaFacebook } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";

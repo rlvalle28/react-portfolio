@@ -1,5 +1,6 @@
 import React from 'react'
 import '../Skills/Skills.css';
+import '../Skills/Skills_responsive.css';
 import { IoMdStar } from "react-icons/io";
 import { IoMdStarHalf } from "react-icons/io";
 import { IoMdStarOutline } from "react-icons/io";

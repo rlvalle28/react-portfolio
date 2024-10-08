@@ -1,0 +1,6 @@
+@media (max-width: 500px) {
+    .footer {
+        justify-content: center;
+        padding: 20px 0;
+    }
+}

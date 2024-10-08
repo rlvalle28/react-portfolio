@@ -2,4 +2,9 @@
     .hero-img {
         width: 300px;
     }
+
+    #home .hero-img::after {
+        top: -100px;
+        left: -250px;
+    }
 }
