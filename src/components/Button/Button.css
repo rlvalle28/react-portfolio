@@ -1,5 +1,6 @@
 .view-button {
     padding: 10px 20px;
+    color: #000 !important;
     border: 2px solid #000;
     border-radius: 25px;
     background: transparent;
