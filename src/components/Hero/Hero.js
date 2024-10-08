@@ -10,7 +10,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { AiFillTikTok } from "react-icons/ai";
 
 const handleViewResume = () => {
-    const filePath = './Ralph_Laurence_valle.pdf';
+    const filePath = 'Ralph_Laurence_valle.pdf';
     
     window.open(filePath, '_blank');
   };
