@@ -1,0 +1,25 @@
+.CardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.Card {
+    box-shadow: 5px 5px 5px 5px #000;
+    border-radius: 10px;
+    padding: 20px;
+    height: 250px;
+    width: auto;
+}
+
+.Card img {
+    width: 210px;
+    height: 150px;
+}
+
+.Card .cardBottom svg {
+    transform: scale(2);
+    margin: 6px;
+}
