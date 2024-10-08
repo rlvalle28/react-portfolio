@@ -8,7 +8,7 @@
 
 .view-button:hover {
     background: #000;
-    color: #fff;
+    color: #fff !important;
     scale: 1.1;
     transition: 1.1s all;
 }
