@@ -1,6 +1,7 @@
 import React from 'react';
 import '../CForm/CForm.css';
 import '../CForm/CForm_responsive.css';
+import {useState, useEffect, useRef} from 'react';
 
 export default function Contact() {
     const [result, setResult] = React.useState("");
@@ -28,6 +29,13 @@ export default function Contact() {
         setResult(data.message);
       }
     };
+
+    // useEffect using useRef
+    const FocusInput = useRef();
+
+    useEffect(() => {
+      FocusInput.current.focus();
+    })
   
     return (
       <div className='main-container' id='contact'>
@@ -36,7 +44,7 @@ export default function Contact() {
           <h1>Contact</h1>
           <div className='form-box'>
           <label>Full Name</label>
-          <input type="text" name="name" placeholder='Ralph Laurence Valle' required/>
+          <input type="text" name="name" placeholder='Ralph Laurence Valle' ref={FocusInput} required/>
           <label>Email Address</label>
           <input type="email" name="email" placeholder='ralphlaurencevalle.work@gmail.com' required/>
           <label>Phone Number</label>
