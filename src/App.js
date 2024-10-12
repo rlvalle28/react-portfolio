@@ -25,17 +25,32 @@ function App() {
     counter(0);
   }
 
-  // useEffect
-  const inputEffect = useRef();
+  useEffect(() => {
+    // Disable right-click
+    const handleContextMenu = (event) => {
+      event.preventDefault();
+      alert('Right-click is disabled!');
+    };
 
+    document.addEventListener('contextmenu', handleContextMenu);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      document.removeEventListener('contextmenu', handleContextMenu);
+    };
+  }, []);
+
+  // useEffect
   useEffect(() => {
     alert('Welcome to my Portfolio!')
   })
+
 
   return (
     <>
     <StickyHeader />
     <Hero />
+    
     <About />
     <Skill />
     <CF />

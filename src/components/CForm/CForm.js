@@ -31,10 +31,10 @@ export default function Contact() {
     };
 
     // useEffect using useRef
-    const FocusInput = useRef();
+    const inputText = useRef();
 
     useEffect(() => {
-      FocusInput.current.focus();
+      inputText.current.focus();
     })
   
     return (
@@ -44,7 +44,7 @@ export default function Contact() {
           <h1>Contact</h1>
           <div className='form-box'>
           <label>Full Name</label>
-          <input type="text" name="name" placeholder='Ralph Laurence Valle' ref={FocusInput} required/>
+          <input type="text" name="name" placeholder='Ralph Laurence Valle' ref={inputText} required/>
           <label>Email Address</label>
           <input type="email" name="email" placeholder='ralphlaurencevalle.work@gmail.com' required/>
           <label>Phone Number</label>
