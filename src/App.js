@@ -8,6 +8,7 @@ import Skill from './components/Skills/Skills';
 import CF from './components/CForm/CForm';
 import Footer from './components/Footer/Footer';
 import { useState, useRef } from 'react';
+import Swal from 'sweetalert2';
 
 
 function App() {
@@ -25,32 +26,38 @@ function App() {
     counter(0);
   }
 
-  useEffect(() => {
-    // Disable right-click
-    const handleContextMenu = (event) => {
-      event.preventDefault();
-      alert('Right-click is disabled!');
-    };
-
-    document.addEventListener('contextmenu', handleContextMenu);
-
-    // Clean up the event listener on component unmount
-    return () => {
-      document.removeEventListener('contextmenu', handleContextMenu);
-    };
-  }, []);
-
   // useEffect
   useEffect(() => {
-    alert('Welcome to my Portfolio!')
-  })
+    let timerInterval;
+    Swal.fire({
+      title: "Welcome to my portfolio!",
+      html: "I will close in <b></b> milliseconds.",
+      timer: 2000,
+      timerProgressBar: true,
+      didOpen: () => {
+        Swal.showLoading();
+        const timer = Swal.getPopup().querySelector("b");
+        timerInterval = setInterval(() => {
+          timer.textContent = `${Swal.getTimerLeft()}`;
+        }, 100);
+      },
+      willClose: () => {
+        clearInterval(timerInterval);
+      }
+    }).then((result) => {
+      /* Read more about handling dismissals below */
+      if (result.dismiss === Swal.DismissReason.timer) {
+        console.log("I was closed by the timer");
+      }
+    });
+  }, []); // Runs only once when the component is mounted
 
 
   return (
     <>
     <StickyHeader />
     <Hero />
-    
+   
     <About />
     <Skill />
     <CF />
