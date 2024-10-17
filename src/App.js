@@ -31,8 +31,8 @@ function App() {
     Swal.fire({
       title: "Hi!",
       text: "Welcome to my Portfolio",
-      imageUrl: "https://unsplash.it/400/200",
-      imageWidth: 400,
+      imageUrl: "../logo.png",
+      imageWidth: 200,
       imageHeight: 200,
       imageAlt: "Custom image"
     });
