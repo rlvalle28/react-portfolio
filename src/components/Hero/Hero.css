@@ -6,7 +6,7 @@
 .react-icons {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 .react-icons svg {

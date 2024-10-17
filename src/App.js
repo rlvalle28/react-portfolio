@@ -28,27 +28,13 @@ function App() {
 
   // useEffect
   useEffect(() => {
-    let timerInterval;
     Swal.fire({
-      title: "Welcome to my portfolio!",
-      html: "I will close in <b></b> milliseconds.",
-      timer: 2000,
-      timerProgressBar: true,
-      didOpen: () => {
-        Swal.showLoading();
-        const timer = Swal.getPopup().querySelector("b");
-        timerInterval = setInterval(() => {
-          timer.textContent = `${Swal.getTimerLeft()}`;
-        }, 100);
-      },
-      willClose: () => {
-        clearInterval(timerInterval);
-      }
-    }).then((result) => {
-      /* Read more about handling dismissals below */
-      if (result.dismiss === Swal.DismissReason.timer) {
-        console.log("I was closed by the timer");
-      }
+      title: "Hi!",
+      text: "Welcome to my Portfolio",
+      imageUrl: "https://unsplash.it/400/200",
+      imageWidth: 400,
+      imageHeight: 200,
+      imageAlt: "Custom image"
     });
   }, []); // Runs only once when the component is mounted
 
@@ -57,7 +43,7 @@ function App() {
     <>
     <StickyHeader />
     <Hero />
-   
+    
     <About />
     <Skill />
     <CF />

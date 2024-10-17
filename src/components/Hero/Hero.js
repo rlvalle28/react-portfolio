@@ -6,8 +6,9 @@ import hero_img from '../../images/image_rb.png';
 import TypingText from '../TypingText/TypingText';
 import { FaFacebook } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
-import { FaInstagramSquare } from "react-icons/fa";
-import { AiFillTikTok } from "react-icons/ai";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { FaSkype } from "react-icons/fa";
+import { FaDiscord } from "react-icons/fa";
 
 const handleViewResume = () => {
     const filePath = '/Ralph_Laurence_Valle.pdf';
@@ -32,8 +33,17 @@ export default function hero() {
                     <a href="https://github.com/rlvalle28" target="_blank" rel="noopener noreferrer">
                         <FaGithub />
                     </a>
-                    <FaInstagramSquare />
-                    <AiFillTikTok />
+                    <a href="https://wa.me/+639761652460" target="_blank" rel="noopener noreferrer">
+                        <IoLogoWhatsapp />
+                    </a>
+                    
+                    <a href="skype:plug-shop?+639761652460" target="_blank" rel="noopener noreferrer">
+                        <FaSkype />
+                    </a>
+
+                    <a href="https://discord.com/tel:+639761652460" target="_blank" rel="noopener noreferrer">
+                        <FaDiscord />
+                    </a>
                     </div>
                     <button onClick={handleViewResume} className="view-button">View My Resume</button>
                 </div>
