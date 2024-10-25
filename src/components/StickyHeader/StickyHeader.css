@@ -33,15 +33,16 @@
 }
 
 a.nav-link {
-  color: #00308F;
+  color: var(--navy-blue);
   font-weight: 500;
-}
 
-a.nav-link.active {
-  font-weight: 600;
-}
+  &:active {
+    font-weight: 600;
+  }
 
-a.nav-link:hover {
-  scale: 1.2;
-  color: #00308F;
+  &:hover {
+    scale: 1.2;
+    transition: 0.5s ease-in-out;
+    font-weight: 700;
+  }
 }

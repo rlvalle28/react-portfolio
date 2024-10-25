@@ -4,6 +4,7 @@ import './App.css';
 import './App_responsive.css';
 import Hero from './components/Hero/Hero';
 import About from './components/About/About';
+import Project from './components/Projects/projects';
 import Skill from './components/Skills/Skills';
 import CF from './components/CForm/CForm';
 import Footer from './components/Footer/Footer';
@@ -36,15 +37,22 @@ function App() {
       imageHeight: 200,
       imageAlt: "Custom image"
     });
-  }, []); // Runs only once when the component is mounted
+  }, []);
 
 
   return (
     <>
     <StickyHeader />
     <Hero />
-    
+    {/* <div className='' style={{display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: '10px'}}>
+      <input type='hidden' autoFocus />
+      <h1>{count}</h1>
+    <button onClick={add}>Add</button>
+    <button onClick={minus}>Minus</button>
+    <button onClick={resets}>Reset</button>
+    </div> */}
     <About />
+    <Project />
     <Skill />
     <CF />
     <Footer />

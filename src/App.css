@@ -1,11 +1,15 @@
+* {
+    --smoke: #f8f9fa;
+    --navy-blue: #00308F;
+    --black: #000;
+}
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #f8f9fa;
+    background: var(--smoke);
 }
-
-
 
 .main-container {
     padding: 100px 20px;
