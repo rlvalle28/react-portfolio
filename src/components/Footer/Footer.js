@@ -4,8 +4,9 @@ import '../Footer/Footer.css';
 import '../Footer/Footer_responsive.css';
 import { FaFacebook } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
-import { FaInstagramSquare } from "react-icons/fa";
-import { AiFillTikTok } from "react-icons/ai";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { FaSkype } from "react-icons/fa";
+import { FaDiscord } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -20,8 +21,15 @@ const Footer = () => {
                     <a href="https://github.com/rlvalle28" target="_blank" rel="noopener noreferrer">
                         <FaGithub />
                     </a>
-                    <FaInstagramSquare />
-                    <AiFillTikTok />
+                    <a href="https://wa.me/+639761652460" target="_blank" rel="noopener noreferrer">
+                        <IoLogoWhatsapp />
+                    </a>
+                    <a href="skype:plug-shop?+639761652460" target="_blank" rel="noopener noreferrer">
+                        <FaSkype />
+                    </a>
+                    <a href="https://discord.com/tel:+639761652460" target="_blank" rel="noopener noreferrer">
+                        <FaDiscord />
+                    </a>
         </div>
         </div>
       </div>
