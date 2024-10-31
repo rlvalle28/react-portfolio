@@ -4,6 +4,7 @@ import '../Projects/projects.css'
 import druv from '../../images/druv-realty.webp'
 import joint from '../../images/joint-property-ventures.webp'
 import ida from '../../images/ida.png'
+import blossom from '../../images/blossom.webp'
 
 const projects = () => {
   return (
@@ -28,6 +29,12 @@ const projects = () => {
                             <a href='https://www.intuitivedataanalytics.com/' target='blank'>
                                 <img src={ida}></img>
                                 <h2>Intuitive Data Analytics</h2>
+                                </a>
+                            </div>
+                            <div className='cardProj'>
+                            <a href='https://blossomecom.com/' target='blank'>
+                                <img src={blossom}></img>
+                                <h2>Blossom Ecom</h2>
                                 </a>
                             </div>
                     </div>

@@ -44,7 +44,7 @@ function App() {
     <>
     <StickyHeader />
     <Hero />
-  
+    
     <About />
     <Project />
     <Skill />
