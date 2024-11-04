@@ -10,6 +10,7 @@ import CF from './components/CForm/CForm';
 import Footer from './components/Footer/Footer';
 import { useState, useRef } from 'react';
 import Swal from 'sweetalert2';
+import ScrollToTop from './components/ScrollToTop/scrolltotop';
 
 
 function App() {
@@ -44,7 +45,7 @@ function App() {
     <>
     <StickyHeader />
     <Hero />
-    
+    <ScrollToTop />
     <About />
     <Project />
     <Skill />
