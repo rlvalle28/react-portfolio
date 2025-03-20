@@ -1,0 +1,15 @@
+@media(max-width: 1299px) {
+    .cardProj img {
+        width: 100%;
+    }
+    
+    .Card {
+        width: 45% !important;
+    }
+}
+
+@media(max-width: 768px) {
+    .Card {
+        width: 100% !important;
+    }
+}

@@ -21,8 +21,7 @@
 .react-icons svg:hover {
     background: #000;
     color: #fff;
-    scale: 1.3;
-    transition: 1.1s all;
+    transition: .5s all;
 }
 
 #home .hero-img {

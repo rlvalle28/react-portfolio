@@ -13,9 +13,9 @@ const Footer = () => {
       <div className='container-row'>
         <div className='footer'>
         <img src={logo_img}></img>
-       <h3>
+       <h6>
        © {currentYear} All rights reserved.
-       </h3>
+       </h6>
         </div>
       </div>
     </div>

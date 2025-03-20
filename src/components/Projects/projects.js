@@ -1,10 +1,16 @@
 import React from 'react'
 import '../Projects/projects.css'
-
-import druv from '../../images/dhruv_img.png'
-import joint from '../../images/joint_img.png'
+import '../Projects/project_responsive.css'
+import cycle from '../../images/cycle.png'
+import aventra from '../../images/aventra.png'
 import ida from '../../images/ida_img.png'
 import blossom from '../../images/blossom_img.png'
+import proofEasy from '../../images/proof_easy.png'
+import vita from '../../images/vita.png'
+import trailer from '../../images/trailer.png'
+import flayboard from '../../images/flayboard.png'
+
+
 
 const projects = () => {
   return (
@@ -14,13 +20,13 @@ const projects = () => {
                 <h1>Projects</h1>
                     <div className='projectContainer'>
                             <div className='cardProj'>
-                                <a href='https://dhruv-realty.com/' target='_blank'>
-                                <img src={druv}></img>
+                                <a href='https://cycleandstrength.com/' target='_blank'>
+                                <img src={cycle}></img>
                                 </a>
                             </div>
                             <div className='cardProj'>
-                                <a href='https://jointpropertyventures.com/' target='_blank'>
-                                <img src={joint}></img>
+                                <a href='https://aventramanagement.com/' target='_blank'>
+                                <img src={aventra}></img>
                                 </a>
                             </div>
                             <div className='cardProj'>
@@ -31,6 +37,26 @@ const projects = () => {
                             <div className='cardProj'>
                                 <a href='https://blossomecom.com/' target='_blank'>
                                 <img src={blossom}></img>
+                                </a>
+                            </div>
+                            <div className='cardProj'>
+                                <a href='https://proofeasy.io/' target='_blank'>
+                                <img src={proofEasy}></img>
+                                </a>
+                            </div>
+                            <div className='cardProj'>
+                                <a href='https://vitanatural.nl/' target='_blank'>
+                                <img src={vita}></img>
+                                </a>
+                            </div>
+                            <div className='cardProj'>
+                                <a href='https://www.altrailerrentals.com/' target='_blank'>
+                                <img src={trailer}></img>
+                                </a>
+                            </div>
+                            <div className='cardProj'>
+                                <a href='https://johnb562.sg-host.com/' target='_blank'>
+                                <img src={flayboard}></img>
                                 </a>
                             </div>
                     </div>

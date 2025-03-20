@@ -16,17 +16,17 @@ import ScrollToTop from './components/ScrollToTop/scrolltotop';
 function App() {
 
   // useState
-  const [count, counter] = useState(0);
+  // const [count, counter] = useState(0);
 
-    const add = () => {
-      counter(count + 1);      
-  }
-  const minus = () => {
-    counter(count - 1);
-  }
-  const resets = () => {
-    counter(0);
-  }
+  //   const add = () => {
+  //     counter(count + 1);      
+  // }
+  // const minus = () => {
+  //   counter(count - 1);
+  // }
+  // const resets = () => {
+  //   counter(0);
+  // }
 
   // useEffect
   useEffect(() => {
@@ -45,6 +45,10 @@ function App() {
     <>
     <StickyHeader />
     <Hero />
+    <div className='' style={{display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: '10px'}}>
+      <input type='hidden' autoFocus />
+      
+    </div>
     <ScrollToTop />
     <About />
     <Project />

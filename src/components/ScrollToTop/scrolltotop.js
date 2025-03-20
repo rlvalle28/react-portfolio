@@ -41,6 +41,11 @@ const ScrollToTop = () => {
             border: 'none',
             borderRadius: '10px',
             cursor: 'pointer',
+            height: '50px',
+            width: '50px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
           }}
         >
           &#8593;

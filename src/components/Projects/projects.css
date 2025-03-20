@@ -1,14 +1,25 @@
 .projectContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
 }
 
 .cardProj {
-    width: 100%;
+    width: auto;
     
 }
 .cardProj img {
-    width: 100%;
+    width: 400px;
+    height:auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
     box-shadow: 10px 10px 20px 10px#000;
+}
+
+.cardProj img:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s;
 }
