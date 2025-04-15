@@ -11,7 +11,7 @@ import { FaSkype } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
 
 const handleViewResume = () => {
-    const filePath = '/Ralph_Laurence_Valle.pdf';
+    const filePath = '/Ralph_Laurence_Valle_FrontEndDev.pdf';
     
     window.open(filePath, '_blank');
   };

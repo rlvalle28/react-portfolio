@@ -9,6 +9,8 @@ import proofEasy from '../../images/proof_easy.png'
 import vita from '../../images/vita.png'
 import trailer from '../../images/trailer.png'
 import flayboard from '../../images/flayboard.png'
+import marci from '../../images/marci.png'
+import urlsvg from '../../images/url-link.png'
 
 
 
@@ -18,47 +20,124 @@ const projects = () => {
         <div className='main-container'>
             <div className='container-column'>
                 <h1>Projects</h1>
-                    <div className='projectContainer'>
-                            <div className='cardProj'>
-                                <a href='https://cycleandstrength.com/' target='_blank'>
+                    <div className='projectContainer d-flex flex-wrap justify-content-center align-items-center gap-4'>
+                        <div className='parent-card'>
+                        <div className='cardProj'>
                                 <img src={cycle}></img>
-                                </a>
                             </div>
-                            <div className='cardProj'>
-                                <a href='https://aventramanagement.com/' target='_blank'>
+                            <div className='img-hover d-flex justify-content-center align-items-center'>
+                                <div className='img-logo'>
+                                <a href='https://cycleandstrength.com/' target='_blank'>
+                                    <img src={urlsvg} alt="Descriptive text" className="responsive-img" />
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='parent-card'>
+                        <div className='cardProj'>
                                 <img src={aventra}></img>
-                                </a>
                             </div>
-                            <div className='cardProj'>
-                                <a href='https://www.intuitivedataanalytics.com/' target='_blank'>
+                            <div className='img-hover d-flex justify-content-center align-items-center'>
+                                <div className='img-logo'>
+                                <a href='https://aventramanagement.com/' target='_blank'>
+                                    <img src={urlsvg} alt="Descriptive text" className="responsive-img" />
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='parent-card'>
+                        <div className='cardProj'>
                                 <img src={ida}></img>
-                                </a>
                             </div>
-                            <div className='cardProj'>
-                                <a href='https://blossomecom.com/' target='_blank'>
+                            <div className='img-hover d-flex justify-content-center align-items-center'>
+                                <div className='img-logo'>
+                                <a href='https://www.intuitivedataanalytics.com/' target='_blank'>
+                                    <img src={urlsvg} alt="Descriptive text" className="responsive-img" />
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='parent-card'>
+                        <div className='cardProj'>
                                 <img src={blossom}></img>
-                                </a>
                             </div>
-                            <div className='cardProj'>
-                                <a href='https://proofeasy.io/' target='_blank'>
+                            <div className='img-hover d-flex justify-content-center align-items-center'>
+                                <div className='img-logo'>
+                                <a href='https://blossomecom.com/' target='_blank'>
+                                    <img src={urlsvg} alt="Descriptive text" className="responsive-img" />
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='parent-card'>
+                        <div className='cardProj'>
                                 <img src={proofEasy}></img>
-                                </a>
                             </div>
-                            <div className='cardProj'>
-                                <a href='https://vitanatural.nl/' target='_blank'>
+                            <div className='img-hover d-flex justify-content-center align-items-center'>
+                                <div className='img-logo'>
+                                <a href='https://proofeasy.io/' target='_blank'>
+                                    <img src={urlsvg} alt="Descriptive text" className="responsive-img" />
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='parent-card'>
+                        <div className='cardProj'>
                                 <img src={vita}></img>
-                                </a>
                             </div>
-                            <div className='cardProj'>
-                                <a href='https://www.altrailerrentals.com/' target='_blank'>
+                            <div className='img-hover d-flex justify-content-center align-items-center'>
+                                <div className='img-logo'>
+                                <a href='https://vitanatural.nl/' target='_blank'>
+                                    <img src={urlsvg} alt="Descriptive text" className="responsive-img" />
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='parent-card'>
+                        <div className='cardProj'>
                                 <img src={trailer}></img>
-                                </a>
                             </div>
-                            <div className='cardProj'>
-                                <a href='https://johnb562.sg-host.com/' target='_blank'>
+                            <div className='img-hover d-flex justify-content-center align-items-center'>
+                                <div className='img-logo'>
+                                <a href='https://www.altrailerrentals.com/' target='_blank'>
+                                    <img src={urlsvg} alt="Descriptive text" className="responsive-img" />
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='parent-card'>
+                        <div className='cardProj'>
                                 <img src={flayboard}></img>
-                                </a>
                             </div>
+                            <div className='img-hover d-flex justify-content-center align-items-center'>
+                                <div className='img-logo'>
+                                <a href='https://johnb562.sg-host.com/' target='_blank'>
+                                    <img src={urlsvg} alt="Descriptive text" className="responsive-img" />
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='parent-card'>
+                        <div className='cardProj'>
+                                <img src={marci}></img>
+                            </div>
+                            <div className='img-hover d-flex justify-content-center align-items-center'>
+                                <div className='img-logo'>
+                                <a href='https://marci-metzger.netlify.app/' target='_blank'>
+                                    <img src={urlsvg} alt="Descriptive text" className="responsive-img" />
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
             </div>
         </div>

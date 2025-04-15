@@ -8,6 +8,7 @@
     top: 0;
     z-index: 100;
   }
+
   
   .sticky {
     position: fixed;
@@ -39,10 +40,31 @@ a.nav-link {
   &:active {
     font-weight: 600;
   }
-
-  &:hover {
-    scale: 1.2;
-    transition: 0.5s ease-in-out;
-    font-weight: 700;
-  }
 }
+
+.me-auto a {
+  position: relative;
+  overflow: hidden;
+}
+
+.me-auto a:before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  background: var(--black);
+  height: 2px;
+  width: 0;
+  transition: width 0.3s ease;
+}
+
+  .me-auto a:hover:before {
+    width: 100%;
+}
+
+  .me-auto a:active:before {
+    width: 100%;
+  }
+
+  
+

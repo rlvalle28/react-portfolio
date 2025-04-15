@@ -1,25 +1,50 @@
-.projectContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+
+.parent-card {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+
 }
 
-.cardProj {
-    width: auto;
-    
+.parent-card .img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.50);
+    border-radius: 10px;
+    opacity: 0;
+    transition: .6s ease-in-out;
+
+    &:hover {
+        opacity: 1;
+    }
 }
+
 .cardProj img {
-    width: 400px;
+    width: 600px;
     height:auto;
     aspect-ratio: 16/9;
     object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 10px 10px 20px 10px#000;
+    opacity: 1;
+
+    &:hover {
+        opacity: 0;
+    }
 }
 
-.cardProj img:hover {
-    transform: scale(1.2);
-    transition: transform 0.5s;
-}
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    width: 30px;
+    display: block;
+  }
+
+.img-logo {
+    background: var(--smoke);
+    padding: 20px;
+    border-radius: 50%;
+  }
+  

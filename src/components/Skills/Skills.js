@@ -12,6 +12,8 @@ import react_img from '../../images/react_text.png';
 import php_img from '../../images/php.png';
 import wp_img from '../../images/wp.png';
 
+
+
 const Skills = () => {
   return (
     <div className='text-center' id='skills'>
