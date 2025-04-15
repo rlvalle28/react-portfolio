@@ -28,17 +28,17 @@ function App() {
   //   counter(0);
   // }
 
-  // useEffect
-  // useEffect(() => {
-  //   Swal.fire({
-  //     title: "Hi!",
-  //     text: "Welcome to my Portfolio",
-  //     imageUrl: "../logo.png",
-  //     imageWidth: 200,
-  //     imageHeight: 200,
-  //     imageAlt: "Custom image"
-  //   });
-  // }, []);
+  useEffect
+  useEffect(() => {
+    Swal.fire({
+      title: "Hi!",
+      text: "Welcome to my Portfolio",
+      imageUrl: "../logo.png",
+      imageWidth: 200,
+      imageHeight: 200,
+      imageAlt: "Custom image"
+    });
+  }, []);
 
 
   return (
