@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../CForm/CForm.css';
 import '../CForm/CForm_responsive.css';
 
@@ -34,12 +34,6 @@ export default function Contact() {
         }
     };
 
-    // useEffect using useRef
-    const inputText = useRef();
-
-    useEffect(() => {
-        inputText.current.focus();
-    }, []);
 
     return (
         <div className='main-container' id='contact'>
@@ -48,7 +42,7 @@ export default function Contact() {
                     <h1>Contact</h1>
                     <div className='form-box'>
                         <label>Full Name</label>
-                        <input type="text" name="name" placeholder='Ralph Laurence Valle' ref={inputText} required />
+                        <input type="text" name="name" placeholder='Ralph Laurence Valle' required />
                         <label>Email Address</label>
                         <input type="email" name="email" placeholder='ralphlaurencevalle.work@gmail.com' required />
                         <label>Phone Number</label>
@@ -56,7 +50,7 @@ export default function Contact() {
                         <label>Message</label>
                         <textarea name="message" placeholder='Hi! Ralph...' rows={4} required></textarea>
                     </div>
-                    <button type="submit" className='view-button'>Submit Form </button>
+                    <button type="submit" className='submit-button'>Submit Form </button>
                     <span>{result}</span>
                 </form>
             </div>

@@ -1,4 +1,5 @@
-.view-button {
+.view-button,
+.submit-button {
     padding: 10px 20px;
     color: #000 !important;
     border: 2px solid #000;
@@ -6,10 +7,35 @@
     background: transparent;
     position: relative;
     overflow: hidden;
+    z-index: 2;
+    transition: .5s ease-out;
 }
 
-.view-button:hover {
-    background: var(--black);
-    color: var(--smoke) !important;
-    transition: .5s ease-out;
+.view-button:after,
+.submit-button:after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 25px;
+    right: -200px;
+    top: 0;
+    background: var(--navy-blue);
+    color: var(--smoke);
+    height: 100%;
+    width: 100%;
+    transition: 0.4s ease-in-out;
+}
+
+.view-button:after {
+    content: 'View My Resume';
+}
+
+.submit-button:after {
+    content: 'Submit Form';
+}
+
+.view-button:hover:after,
+.submit-button:hover:after {
+    right: 0;
 }

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaArrowUp } from "react-icons/fa";
+import '../ScrollToTop/scrolltotop.css'
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -27,26 +28,11 @@ const ScrollToTop = () => {
   }, []);
 
   return (
-    <div>
+    <div id='scroll-btn'>
       {isVisible && (
-        <button
+        <button className='d-flex justify-content-center align-items-center'
           onClick={scrollToTop}
-          style={{
-            position: 'fixed',
-            bottom: '30px',
-            right: '30px',
-            padding: '20px',
-            backgroundColor: '#00308F',
-            color: 'white',
-            border: 'none',
-            borderRadius: '10px',
-            cursor: 'pointer',
-            height: '50px',
-            width: '50px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
+          
         >
           &#8593;
         </button>

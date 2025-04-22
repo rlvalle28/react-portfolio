@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect }  from 'react';
 import '../Hero/Hero.css';
 import '../Hero/Hero_responsive.css';
 import '../Button/Button.css';
@@ -17,10 +17,10 @@ const handleViewResume = () => {
   };
 
 
-export default function hero() {
+export default function Hero() {
 
     return (
-        <div className='text-center' id='home'>
+        <di className='text-center' id='home'>
         <div className="main-container">
            <div className="container-row">
                 <div className='hero'>
@@ -52,7 +52,7 @@ export default function hero() {
                 </div>
            </div>
         </div>
-        </div>
+        </di>
     )
 }
 

@@ -28,7 +28,7 @@ function App() {
   //   counter(0);
   // }
 
-  useEffect
+
   useEffect(() => {
     Swal.fire({
       title: "Hi!",
