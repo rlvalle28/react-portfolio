@@ -20,8 +20,8 @@ const Skills = () => {
       <div className='main-container'>
         <div className='container-row'>
         <h1>Skills</h1>
-          <div className='CardContainer'>
-            <div className='Card'>
+          <div className='CardContainer d-flex justify-content-center align-items-center flex-wrap gap-4'>
+            <div className='Card d-flex flex-column'>
               <div className='cardTop'>
                 <img src={html_img}></img>
               </div>
@@ -33,7 +33,7 @@ const Skills = () => {
               <IoMdStarOutline />
               </div>
             </div>
-            <div className='Card'>
+            <div className='Card d-flex flex-column'>
               <div className='cardTop'>
                 <img src={css_img}></img>
               </div>
@@ -45,7 +45,7 @@ const Skills = () => {
               <IoMdStarOutline />
               </div>
             </div>
-            <div className='Card'>
+            <div className='Card d-flex flex-column'>
               <div className='cardTop'>
               <img src={js_img}></img>
               </div>
@@ -57,7 +57,7 @@ const Skills = () => {
               <IoMdStarOutline />
               </div>
             </div>
-            <div className='Card'>
+            <div className='Card d-flex flex-column'>
               <div className='cardTop'>
               <img src={bootstrap_img}></img>
               </div>
@@ -69,7 +69,7 @@ const Skills = () => {
               <IoMdStarOutline />
               </div>
             </div>
-            <div className='Card'>
+            <div className='Card d-flex flex-column'>
               <div className='cardTop'>
               <img src={react_img}></img>
               </div>
@@ -81,7 +81,7 @@ const Skills = () => {
               <IoMdStarOutline />
               </div>
             </div>
-            <div className='Card'>
+            <div className='Card d-flex flex-column'>
               <div className='cardTop'>
               <img src={php_img}></img>
               </div>
@@ -93,7 +93,7 @@ const Skills = () => {
               <IoMdStarOutline />
               </div>
             </div>
-            <div className='Card'>
+            <div className='Card d-flex flex-column'>
               <div className='cardTop'>
               <img src={wp_img}></img>
               </div>

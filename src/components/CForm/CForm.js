@@ -38,7 +38,7 @@ export default function Contact() {
     return (
         <div className='main-container' id='contact'>
             <div className='container-column'>
-                <form onSubmit={onSubmit}>
+                <form onSubmit={onSubmit} className='d-flex flex-column justify-content-center align-items-center'>
                     <h1>Contact</h1>
                     <div className='form-box'>
                         <label>Full Name</label>

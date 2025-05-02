@@ -26,7 +26,7 @@ export default function Hero() {
                 <div className='hero'>
                     <h1>Hi! I'm Ralph Laurence Valle</h1>
                     <TypingText />
-                    <div className='react-icons m-3'>
+                    <div className='react-icons d-flex justify-content-center align-items-center gap-3 m-3'>
                     <a href="https://www.facebook.com/rencevalle.28" target="_blank" rel="noopener noreferrer">
                         <FaFacebook />
                     </a>

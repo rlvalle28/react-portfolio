@@ -1,23 +1,24 @@
-.CardContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
 .Card {
     box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.75);
     border-radius: 10px;
     padding: 20px;
     height: 250px;
-    width: auto;
+    width: 300px;
+}
+
+.Card:hover {
+    background: var(--navy-blue);
+    color: var(--smoke);
+
+    &.Card:hover img {
+       background: var(--smoke);
+       border-radius: 10px;
+    }
 }
 
 .Card img {
     width: auto;
     height: 150px;
-    aspect-ratio: 16 / 9;
 }
 
 .Card .cardBottom svg {

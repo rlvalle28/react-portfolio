@@ -3,11 +3,6 @@
     filter: drop-shadow(10px 20px 40px #808080);
 }
 
-.react-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
 
 .react-icons svg {
     font-size: 35px;
