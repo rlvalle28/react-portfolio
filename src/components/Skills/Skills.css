@@ -1,4 +1,5 @@
 .Card {
+    position: relative;
     box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.75);
     border-radius: 10px;
     padding: 20px;
@@ -10,10 +11,47 @@
     background: var(--navy-blue);
     color: var(--smoke);
 
-    &.Card:hover img {
-       background: var(--smoke);
-       border-radius: 10px;
+}
+
+.Card:hover .rate {
+    opacity: 1;
+}
+
+.Card .rate {
+    position: absolute;
+    top: -65px;
+    left: 0;
+    background: var(--navy-blue);
+    padding: 10px;
+    opacity: 0;
+    transition: .5s ease-in-out;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+
+    &.rate p {
+        margin: 0;
     }
+
+     &.rate:before {
+        content: '';
+        position: absolute;
+        left: 5px;
+        bottom: -20px;
+        background: var(--navy-blue);
+        height: 25px;
+        width: 12px;
+    }
+
+    &.rate:after {
+        content: '';
+        position: absolute;
+        right: 19px;
+        bottom: -20px;
+        transform: rotate(45deg);
+        background: var(--navy-blue);
+        height: 30px;
+        width: 10px;
+    }
+   
 }
 
 .Card img {

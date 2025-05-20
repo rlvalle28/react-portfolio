@@ -25,12 +25,15 @@ const Skills = () => {
               <div className='cardTop'>
                 <img src={html_img}></img>
               </div>
-              <div className='cardBottom'>
+              <div className='cardBottom mt-2'>
               <IoMdStar />
               <IoMdStar />
               <IoMdStar />
               <IoMdStarHalf />
               <IoMdStarOutline />
+              </div>
+              <div className='rate'>
+                <p className='mb-3'>4.5 / 5</p>
               </div>
             </div>
             <div className='Card d-flex flex-column'>
@@ -44,6 +47,9 @@ const Skills = () => {
               <IoMdStarHalf />
               <IoMdStarOutline />
               </div>
+               <div className='rate'>
+                <p className='mb-3'>4.5 / 5</p>
+              </div>
             </div>
             <div className='Card d-flex flex-column'>
               <div className='cardTop'>
@@ -55,6 +61,9 @@ const Skills = () => {
               <IoMdStarHalf />
               <IoMdStarOutline />
               <IoMdStarOutline />
+              </div>
+              <div className='rate'>
+                <p className='mb-3'>3.5 / 5</p>
               </div>
             </div>
             <div className='Card d-flex flex-column'>
@@ -68,6 +77,9 @@ const Skills = () => {
               <IoMdStarOutline />
               <IoMdStarOutline />
               </div>
+              <div className='rate'>
+                <p className='mb-3'>3.5 / 5</p>
+              </div>
             </div>
             <div className='Card d-flex flex-column'>
               <div className='cardTop'>
@@ -79,6 +91,9 @@ const Skills = () => {
               <IoMdStarHalf />
               <IoMdStarOutline />
               <IoMdStarOutline />
+              </div>
+              <div className='rate'>
+                <p className='mb-3'>3.5 / 5</p>
               </div>
             </div>
             <div className='Card d-flex flex-column'>
@@ -92,6 +107,9 @@ const Skills = () => {
               <IoMdStarOutline />
               <IoMdStarOutline />
               </div>
+              <div className='rate'>
+                <p className='mb-3'>3.5 / 5</p>
+              </div>
             </div>
             <div className='Card d-flex flex-column'>
               <div className='cardTop'>
@@ -103,6 +121,9 @@ const Skills = () => {
               <IoMdStar />
               <IoMdStarHalf />
               <IoMdStarOutline />
+              </div>
+              <div className='rate'>
+                <p className='mb-3'>4.5 / 5</p>
               </div>
             </div>
           </div>
