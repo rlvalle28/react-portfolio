@@ -9,6 +9,7 @@ import { FaGithub } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaSkype } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa6";
 
 const handleViewResume = () => {
     const filePath = '/Ralph_Laurence_Valle_FrontEndDev.pdf';
@@ -45,7 +46,8 @@ export default function Hero() {
                         <FaDiscord />
                     </a>
                     </div>
-                    <button onClick={handleViewResume} className="view-button">View My Resume</button>
+                    <button onClick={handleViewResume} className="view-button">View My Resume &nbsp; <FaArrowRight />
+                        </button>
                 </div>
                 <div className='hero-img'>
                     <img src={hero_img} alt='' className='hero-img' />

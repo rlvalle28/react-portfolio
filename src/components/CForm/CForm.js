@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../CForm/CForm.css';
 import '../CForm/CForm_responsive.css';
+import { FaArrowRight } from "react-icons/fa6";
 
 export default function Contact() {
     const [result, setResult] = useState("");
@@ -50,7 +51,7 @@ export default function Contact() {
                         <label>Message</label>
                         <textarea name="message" placeholder='Hi! Ralph...' rows={4} required></textarea>
                     </div>
-                    <button type="submit" className='submit-button'>Submit Form </button>
+                    <button type="submit" className='submit-button'>Submit Form &nbsp; <FaArrowRight /></button>
                     <span>{result}</span>
                 </form>
             </div>
