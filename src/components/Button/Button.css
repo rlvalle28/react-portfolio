@@ -1,39 +1,40 @@
 .view-button,
 .submit-button {
-    padding: 10px 25px 10px 50px;
+    padding: 10px 25px;
     color: #000 !important;
     border: 2px solid #000;
     border-radius: 25px;
     background: transparent;
     z-index: 2;
     position: relative;
-    transition: .2s ease-out;
     overflow: hidden;
 }
 
-.view-button svg,
-.submit-button svg {
-    border-radius: 25px;
-    background: var(--navy-blue);
-    color: var(--smoke);
+.view-button:before,
+.submit-button:before {
+    content: '';
     position: absolute;
-    transition: 0.4s ease-in-out;
-    width: 25px;
-    height: 25px;
-    left: 20px;
-}
-
-.view-button:hover svg {
-    width: 200px;
     left: 0;
-}
-
-.submit-button:hover svg {
-    width: 180px;
-    left: 0;
-}
-
-.view-button:hover,
-.submit-button:hover {
+    top: 0;
+    width: 5px;
+    height: 100%;
     background: var(--navy-blue);
+    transition: 0.8s ease-out;
+    z-index: 1;
+}
+
+.view-button .text,
+.submit-button .text {
+    position: relative;
+    z-index: 2;
+}
+
+.view-button:hover .text,
+.submit-button:hover .text {
+    color: var(--smoke);
+}
+
+.view-button:hover:before,
+.submit-button:hover:before {
+    width: 100%;
 }

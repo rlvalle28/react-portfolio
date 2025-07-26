@@ -46,7 +46,11 @@ export default function Hero() {
                         <FaDiscord />
                     </a>
                     </div>
-                    <button onClick={handleViewResume} className="view-button">View My Resume &nbsp; <FaArrowRight />
+                    <button onClick={handleViewResume}
+                    className="view-button">
+                            <div className='text'>
+                            View My Resume
+                            </div>
                         </button>
                 </div>
                 <div className='hero-img'>
